@@ -8,7 +8,7 @@ image:
   repository: "skswami91/kubernetes-2025"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "53"
+  tag: "54"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -47,7 +47,7 @@ service:
   port: 3000
 
 ingress:
-  enabled: false
+  enabled: true
   className: ""
   annotations:
     kubernetes.io/ingress.class: "alb"
